@@ -1,4 +1,5 @@
-download: joukahainen.xml kotus-sanalista_v1.xml
+words.txt: joukahainen.xml kotus-sanalista_v1.xml
+	PYTHONIOENCODING=utf8 python3 flatten.py > $@
 
 joukahainen.xml:
 	curl https://joukahainen.puimula.org/sanastot/joukahainen.xml.gz | gunzip > $@
