@@ -4,7 +4,7 @@ A mechanically generated sorted list of Finnish words.
 
 ## Usage
 
-For most uses, you should probably only look at words.txt.
+For most uses, you should probably only look at words/words.txt.
 
 To regenerate it, run `make` on a reasonably UNIXy system.
 
