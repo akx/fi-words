@@ -53,9 +53,9 @@ def process_resource(file_id, url):
         data = get_binary(url)
         with open(local_name, "wb") as f:
             f.write(data)
+    all_seen = set()
     for sheet_title, rows in parse_dvv_xlsx(local_name):
         sheet_id = sheet_title.lower().replace(" ", "_")
-        all_seen = set()
         with open(f"names/{file_id}_{sheet_id}.tsv", "w") as f:
             i = 0
             for i, row in enumerate(rows, 1):
@@ -63,11 +63,11 @@ def process_resource(file_id, url):
                     all_seen.add(row[0])
                     print(*row, sep="\t", file=f)
             log.info("Wrote %d rows into %s", i, f.name)
-        with open(f"names/{file_id}_sorted.txt", "w") as f:
-            i = 0
-            for i, name in enumerate(sorted(all_seen), 1):
-                print(name, file=f)
-            log.info("Wrote %d rows into %s", i, f.name)
+    with open(f"names/{file_id}_sorted.txt", "w") as f:
+        i = 0
+        for i, name in enumerate(sorted(all_seen), 1):
+            print(name, file=f)
+        log.info("Wrote %d rows into %s", i, f.name)
 
 
 def main():
