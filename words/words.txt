@@ -7280,6 +7280,7 @@ Suomus=salmi
 Suon=taus
 Suonen=joki
 Suonio
+Suontausta
 Suor=lahti
 Suorsa
 Suortti
@@ -7459,6 +7460,7 @@ Tarkiainen
 Tarkka
 Tarkkanen
 Tarmo
+Taronen
 Tarsos
 Tartto
 Taru
@@ -15625,6 +15627,7 @@ edamjuusto
 edeema
 edelle
 edelleen
+edelleen=johdos
 edelleen=kuljetus
 edelleen=ohjaus
 edelleen=vuokraus
@@ -17159,6 +17162,7 @@ ensitanssijatar
 ensivaikutelma
 ensivierailu
 ensiviulu
+ensiys
 ensiö
 ensiökäämi
 ensyklopedia
@@ -28273,6 +28277,7 @@ inter=planetaarinen
 inter=rail
 inter=railata
 inter=reilata
+inter=stadiaali
 inter=stitiaali
 inter=stitiaali=pneumonia
 inter=stitiaalinen
@@ -40903,6 +40908,7 @@ kollokviumi
 kollottaa
 kollotus
 kolmannes
+kolmannuus
 kolmas
 kolmaskymmenes
 kolmasluokkalainen
@@ -63252,6 +63258,7 @@ nokitusten
 nokivalkea
 nokka
 nokka-akseli
+nokka=hai
 nokkahuilu
 nokkaista
 nokkakolari
@@ -88263,6 +88270,8 @@ sitten=kun
 sittenkin
 sittenkään
 sittiäinen
+situaatio
+situationaalinen
 sitä
 sitä=paitsi
 sitä=vastoin
@@ -90098,6 +90107,7 @@ stabiloida
 stabilointi
 staccato
 stadi
+stadiaali
 stadilainen
 stadion
 stadionyleisö
