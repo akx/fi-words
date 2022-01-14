@@ -1,7 +1,10 @@
-all: words/words.txt names/first_names_sorted.txt
+all: words/nouns.txt words/words.txt names/first_names_sorted.txt
 
-words/words.txt: joukahainen.xml kotus-sanalista_v1.xml
+words/words.txt: flatten_words.py joukahainen.xml kotus-sanalista_v1.xml
 	PYTHONIOENCODING=utf8 python3 flatten_words.py > $@
+
+words/nouns.txt: flatten_nouns.py joukahainen.xml kotus-sanalista_v1.xml
+	PYTHONIOENCODING=utf8 python3 flatten_nouns.py > $@
 
 names/first_names_sorted.txt: download_names.py
 	PYTHONIOENCODING=utf8 python3 download_names.py
